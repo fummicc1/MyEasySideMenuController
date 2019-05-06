@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import EasySideMenuController
 
-class ViewController: UIViewController {
+class ViewController: EasySideMenuController  {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let presentedViewController = UIViewController()
+        presentedViewController.view.frame = view.bounds
+        presentedViewController.view.backgroundColor = .green
+        SideMenuManager.shared.showSideMenu(direction: .left, presenting: self, presented: presentedViewController, sideMenuSize: CGSize(width: 200, height: 300))
     }
-
-
 }
-

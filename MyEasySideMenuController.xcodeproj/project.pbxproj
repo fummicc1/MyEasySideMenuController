@@ -12,9 +12,12 @@
 		D3505B572280A7B3005F1B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3505B552280A7B3005F1B48 /* Main.storyboard */; };
 		D3505B592280A7B3005F1B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3505B582280A7B3005F1B48 /* Assets.xcassets */; };
 		D3505B5C2280A7B3005F1B48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3505B5A2280A7B3005F1B48 /* LaunchScreen.storyboard */; };
+		E2E061F880F1B8481A759390 /* Pods_MyEasySideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F686C0B5F35C47D100EA03B3 /* Pods_MyEasySideMenuController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64C3DBE1FA4CCC4D25CF30B3 /* Pods-MyEasySideMenuController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyEasySideMenuController.release.xcconfig"; path = "Target Support Files/Pods-MyEasySideMenuController/Pods-MyEasySideMenuController.release.xcconfig"; sourceTree = "<group>"; };
+		78628624CEDFADB15246649B /* Pods-MyEasySideMenuController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyEasySideMenuController.debug.xcconfig"; path = "Target Support Files/Pods-MyEasySideMenuController/Pods-MyEasySideMenuController.debug.xcconfig"; sourceTree = "<group>"; };
 		D3505B4E2280A7B3005F1B48 /* MyEasySideMenuController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyEasySideMenuController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3505B512280A7B3005F1B48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3505B532280A7B3005F1B48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D3505B582280A7B3005F1B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3505B5B2280A7B3005F1B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3505B5D2280A7B3005F1B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F686C0B5F35C47D100EA03B3 /* Pods_MyEasySideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyEasySideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E061F880F1B8481A759390 /* Pods_MyEasySideMenuController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262BCB40D18C169A4FF38A07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78628624CEDFADB15246649B /* Pods-MyEasySideMenuController.debug.xcconfig */,
+				64C3DBE1FA4CCC4D25CF30B3 /* Pods-MyEasySideMenuController.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4BC3D4CCD708F873FD4D194F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F686C0B5F35C47D100EA03B3 /* Pods_MyEasySideMenuController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3505B452280A7B3005F1B48 = {
 			isa = PBXGroup;
 			children = (
 				D3505B502280A7B3005F1B48 /* MyEasySideMenuController */,
 				D3505B4F2280A7B3005F1B48 /* Products */,
+				262BCB40D18C169A4FF38A07 /* Pods */,
+				4BC3D4CCD708F873FD4D194F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3505B602280A7B3005F1B48 /* Build configuration list for PBXNativeTarget "MyEasySideMenuController" */;
 			buildPhases = (
+				76C3380BD3CBE58F750B84B8 /* [CP] Check Pods Manifest.lock */,
 				D3505B4A2280A7B3005F1B48 /* Sources */,
 				D3505B4B2280A7B3005F1B48 /* Frameworks */,
 				D3505B4C2280A7B3005F1B48 /* Resources */,
+				030AFDB29F6116F5636B5FA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		030AFDB29F6116F5636B5FA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyEasySideMenuController/Pods-MyEasySideMenuController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasySideMenuController/EasySideMenuController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasySideMenuController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyEasySideMenuController/Pods-MyEasySideMenuController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C3380BD3CBE58F750B84B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyEasySideMenuController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3505B4A2280A7B3005F1B48 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		D3505B612280A7B3005F1B48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78628624CEDFADB15246649B /* Pods-MyEasySideMenuController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		D3505B622280A7B3005F1B48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C3DBE1FA4CCC4D25CF30B3 /* Pods-MyEasySideMenuController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

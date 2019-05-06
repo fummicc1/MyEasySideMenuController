@@ -1,0 +1,6 @@
+framework module Pods_MyEasySideMenuController {
+  umbrella header "Pods-MyEasySideMenuController-umbrella.h"
+
+  export *
+  module * { export * }
+}

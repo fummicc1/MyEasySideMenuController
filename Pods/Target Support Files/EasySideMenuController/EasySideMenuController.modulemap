@@ -1,0 +1,6 @@
+framework module EasySideMenuController {
+  umbrella header "EasySideMenuController-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - EasySideMenuController (0.0.3)
+
+DEPENDENCIES:
+  - EasySideMenuController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EasySideMenuController
+
+SPEC CHECKSUMS:
+  EasySideMenuController: 9d7b71301475fb844f924925280e5be05870eba2
+
+PODFILE CHECKSUM: 79bde7460180939e52f5957674aeb70d5e5f1d80
+
+COCOAPODS: 1.6.1
